@@ -57,5 +57,7 @@ themeOptions:
 sameAs:
   - label: LinkedIn
     url: https://www.linkedin.com/in/chandlervillacruz
+  - label: Medium
+    url: https://medium.com/@chandlervillacruz
 fallbackImage: /img/pic-executive-main-banner-01.webp
 ---
