@@ -1,37 +1,46 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+/**
+ * Banner — editorial inner-page header.
+ * Renders a warm-paper page header matching the homepage hero style.
+ * The old full-bleed background image (imageSrc) is no longer displayed;
+ * the prop is kept for backwards compatibility.
+ */
 const Banner = ({ header, subheader, imageSrc, imageAlt, profileImage }) => {
+  const hasPortrait =
+    !!profileImage &&
+    !!profileImage.src &&
+    !!profileImage.src.childImageSharp &&
+    !!profileImage.src.childImageSharp.fluid &&
+    !!profileImage.src.childImageSharp.fluid.src
+
   return (
-    <div className="pg-width">
-      <div className="banner">
-
-        <img
-          width={1440}
-          height={807}
-          className="bg"
-          alt={imageAlt}
-          src={imageSrc}
-        />
-
-        <div className="content-box">
-          {!!header && !!profileImage && !!profileImage.src && !!profileImage.src.childImageSharp && !!profileImage.src.childImageSharp.fluid && !!profileImage.src.childImageSharp.fluid.src && (
-            <img
-              width={140}
-              height={140}
-              className="profile"
-              alt={!!profileImage && profileImage.alt}
-              src={profileImage.src.childImageSharp.fluid.src}
-            />
-          )}
-          {!!header && (
-            <h1>{header.split(' ')[0]} {header.split(' ')[1] && (<span>{header.split(' ')[1]}</span>)}</h1>
-          )}
-          {!!subheader && (
-            <p>{subheader}</p>
-          )}
-        </div>
+    <div className="banner">
+      {/* Content column */}
+      <div className="content-box">
+        {!!header && (
+          <h1>
+            {header.split(' ')[0]}{' '}
+            {header.split(' ')[1] && <span>{header.split(' ')[1]}</span>}
+          </h1>
+        )}
+        {!!subheader && (
+          <p className="banner-subheader">{subheader}</p>
+        )}
       </div>
+
+      {/* Portrait column — only shown when profileImage is available */}
+      {hasPortrait && (
+        <div className="banner-portrait">
+          <img
+            src={profileImage.src.childImageSharp.fluid.src}
+            alt={profileImage.alt || header}
+            width={200}
+            height={200}
+          />
+        </div>
+      )}
     </div>
   )
 }
@@ -39,9 +48,9 @@ const Banner = ({ header, subheader, imageSrc, imageAlt, profileImage }) => {
 Banner.propTypes = {
   header: PropTypes.string.isRequired,
   subheader: PropTypes.string,
-  imageSrc: PropTypes.string,
+  imageSrc: PropTypes.string,    // kept for API compatibility — no longer rendered
   imageAlt: PropTypes.string,
-  profileImage: PropTypes.object
+  profileImage: PropTypes.object,
 }
 
 export default Banner

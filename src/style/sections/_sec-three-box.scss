@@ -1,8 +1,10 @@
 section.sec-three-box {
     position: relative;
     display: block;
-    margin: 80px 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 4rem 0;
+    background-color: var(--clr-paper-dark);
+    border-top: 1px solid var(--clr-rule);
     transition: all 0.3s ease;
 
     .pg-width {
@@ -22,7 +24,7 @@ section.sec-three-box {
                 font-size: 28px;
                 line-height: 32px;
                 font-weight: 700;
-                color: var(--clr-rd-black);
+                color: var(--clr-ink);
                 transition: all 0.3s ease;
             }
 
@@ -32,7 +34,7 @@ section.sec-three-box {
                 padding: 0px;
                 font-size: 16px;
                 line-height: 20px;
-                color: var(--clr-rd-gray-dark);
+                color: var(--clr-ink-muted);
                 font-weight: 500;
                 transition: all 0.3s ease;
             }
@@ -51,7 +53,7 @@ section.sec-three-box {
                 position: relative;
                 flex: 1;
                 max-width: 300px;
-                border: 1px solid var(--clr-rd-gray-lighter);
+                border: 1px solid var(--clr-rule);
                 border-radius: 10px;
                 padding: 25px;
                 padding-top: 0px;
@@ -94,7 +96,7 @@ section.sec-three-box {
                     font-size: 18px;
                     line-height: 22px;
                     font-weight: 600;
-                    color: var(--clr-rd-black);
+                    color: var(--clr-ink);
                     text-align: center;
                     transition: all 0.3s ease;
                 }

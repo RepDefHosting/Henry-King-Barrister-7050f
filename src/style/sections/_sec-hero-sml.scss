@@ -1,148 +1,111 @@
+/* =========================================
+   Inner-Page Header — Editorial Style
+   Matches homepage warm paper aesthetic.
+   Used on: Profile, Blog archive, Gallery archive, Blog post
+   ========================================= */
+
 section.sec-hero-sml {
-    overflow: hidden;
+  background-color: var(--clr-paper);
+  border-bottom: 1px solid var(--clr-rule);
+  padding: 3.5rem 0 3rem;
 
-    .banner {
-        position: relative;
-        display: flex;
-        align-items: end;
-        margin: 0px;
-        padding: 40px 150px;
-        height: 240px;
-        background-color: var(--clr-rd-gray-light);
-        border-radius: 10px;
-        overflow: hidden;
-        transition: all 0.3s ease;
+  @media (max-width: 740px) {
+    padding: 2.5rem 0 2rem;
+  }
 
-        img.bg {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            right: 0px;
-            bottom: 0px;
-            display: block;
-            margin: 0px;
-            padding: 0px;
-            width: 100% !important;
-            height: 100% !important;
-            border-radius: 10px;
-            object-fit: cover;
-            z-index: 0;
-            pointer-events: none;
-        }
+  .banner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: transparent;
+    border-radius: 0;
+    height: auto;
+    overflow: visible;
+    position: static;
 
-        .content-box {
-            position: relative;
-            display: flex;
-            gap: 15px;
-            align-items: center;
-            margin: 0px;
-            padding: 0px;
-
-            img.profile {
-                position: relative;
-                margin: 0px;
-                padding: 0px;
-                width: 100px !important;
-                height: 100px !important;
-                border-radius: 80px;
-                object-fit: cover;
-                border: 2px solid var(--clr-rd-white);
-                background-color: var(--clr-rd-gray);
-                transition: all 0.3s ease;
-            }
-
-            h1 {
-                padding: 0px;
-                margin: 0px;
-                font-size: 46px;
-                line-height: 52px;
-                font-weight: 700;
-                color: var(--clr-rd-white);
-                text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
-                transition: all 0.3s ease;
-            }
-        }
+    @media (max-width: 740px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 1.5rem;
+      padding: 0 1.25rem;
     }
-}
 
-@media screen and (max-width: 1199px) {
-    section.sec-hero-sml {
-        .banner {
-            padding: 30px 100px;
-            height: 240px;
-
-            .content-box {
-
-                img.profile {
-                    width: 80px !important;
-                    height: 80px !important;
-                }
-
-                h1 {
-                    font-size: 40px;
-                    line-height: 50px;
-                }
-            }
-        }
+    /* Hide full-bleed background image — not used in editorial style */
+    img.bg {
+      display: none !important;
     }
-}
 
-@media screen and (max-width: 991px) {
-    section.sec-hero-sml {
-        .banner {
-            padding: 40px 60px;
-            height: 220px;
+    .content-box {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: static;
+      padding: 0;
+      margin: 0;
 
-            .content-box {
+      h1 {
+        font-size: clamp(2rem, 4.5vw, 3.2rem);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--clr-ink);
+        text-shadow: none;
+        margin: 0 0 0.5rem;
+        padding: 0;
+      }
 
-                img.profile {
-                    width: 60px !important;
-                    height: 60px !important;
-                }
-
-                h1 {
-                    font-size: 36px;
-                    line-height: 40px;
-                }
-            }
-        }
+      /* Profile image — right side portrait frame */
+      img.profile {
+        display: none; /* moved to portrait-frame below */
+      }
     }
-}
 
-@media screen and (max-width: 767px) {
-    section.sec-hero-sml {
-        .banner {
-            padding: 30px 40px;
-            height: 200px;
-
-            .content-box {
-                h1 {
-                    font-size: 32px;
-                    line-height: 36px;
-                }
-            }
-        }
+    /* Page-type eyebrow label — rendered via .banner-eyebrow if present */
+    .banner-eyebrow {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--clr-accent);
+      margin-bottom: 0.85rem;
     }
-}
 
-@media screen and (max-width: 467px) {
-    section.sec-hero-sml {
-        .banner {
-            padding: 20px 20px;
-            height: 180px;
-
-            .content-box {
-
-                img.profile {
-                    width: 50px !important;
-                    height: 50px !important;
-                }
-
-                h1 {
-                    font-size: 28px;
-                    line-height: 32px;
-                }
-            }
-        }
+    /* Subtitle / subheader */
+    .banner-subheader {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--clr-ink-muted);
+      line-height: 1.45;
+      margin: 0;
     }
+
+    /* Portrait frame — right side, mirrors homepage hero */
+    .banner-portrait {
+      flex-shrink: 0;
+      width: 200px;
+
+      @media (max-width: 900px) {
+        width: 160px;
+      }
+
+      @media (max-width: 740px) {
+        width: 120px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 4px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      }
+    }
+  }
 }

@@ -1,9 +1,10 @@
 section.sec-article-full {
     position: relative;
     display: block;
-    margin: 50px 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 4rem 0;
     overflow: hidden;
+    background-color: var(--clr-paper);
     transition: all 0.3s ease;
 
     .pg-width {
@@ -99,7 +100,7 @@ section.sec-article-full {
                 font-size: 16px;
                 line-height: 22px;
                 font-weight: 500;
-                color: var(--clr-rd-black);
+                color: var(--clr-ink);
                 transition: all 0.3s ease;
 
                 strong,
@@ -115,27 +116,30 @@ section.sec-article-full {
                 a {
                     font-weight: inherit;
                     text-decoration: underline;
-                    color: var(--clr-rd-blue);
+                    color: var(--clr-accent);
 
                     &:hover {
                         text-decoration: none;
+                        color: var(--clr-ink);
                     }
                 }
             }
 
             p.date {
-                font-size: 14px;
-                line-height: 16px;
+                font-size: 0.82rem;
+                line-height: 1.4;
                 font-weight: 400;
-                margin: 0px 0px 15px 0px;
+                color: var(--clr-ink-faint);
+                margin: 0px 0px 1.5rem 0px;
             }
 
             ul {
                 li {
                     margin: 12px 0px;
                     font-size: 16px;
-                    line-height: 20px;
-                    font-weight: 450;
+                    line-height: 1.6;
+                    font-weight: 400;
+                    color: var(--clr-ink);
 
                     strong,
                     b {
@@ -150,7 +154,7 @@ section.sec-article-full {
                     a {
                         font-weight: inherit;
                         text-decoration: underline;
-                        color: var(--clr-rd-blue);
+                        color: var(--clr-accent);
 
                         &:hover {
                             text-decoration: none;
