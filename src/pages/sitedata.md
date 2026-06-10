@@ -59,8 +59,8 @@ themeOptions:
   showThemeSwitcher: false
 location: Keizer, OR USA
 sameAs:
-  - label: LinkedIn
-    url: https://www.linkedin.com/in/jennifer-neitzel-3064062b2/
+  - label: Crunchbase
+    url: https://www.crunchbase.com/person/jennifer-neitzel-892a
   - label: Medium
     url: https://medium.com/@jenniferneitzel
 fallbackImage: /img/pic-executive-main-banner-01.webp
