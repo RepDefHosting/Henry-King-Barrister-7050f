@@ -9,6 +9,8 @@ date: 2026-06-10T21:07:30.747Z
 teaser: A commercial property appraisal entails what a business property is
   worth as of a specific date. The appraiser sets a scope of work that defines
   the research, data sources, and inspection steps used in the assignment.
+featuredImage:
+  src: /img/what-appraisers-look-for-during-a-commercial-property-inspection.webp
 profileButton:
   link: /profile
   label: Profile
