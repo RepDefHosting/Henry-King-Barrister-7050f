@@ -40,7 +40,7 @@ socialLinks:
     label: Visit
     show: true
   linkedin:
-    url: https://www.linkedin.com/in/chandlervillacruz
+    url: https://www.linkedin.com/in/jennifer-neitzel-3064062b2/
     label: Visit
     show: true
   pinterest:
