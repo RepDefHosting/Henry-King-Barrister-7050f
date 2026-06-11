@@ -56,13 +56,13 @@ const siteDataFields = [
     required: true,
     hint: "Your job title as you'd like it shown next to your name, e.g. CEO of ABC Widget Corp.",
   },
-  // {
-  //   label: 'Site Name',
-  //   name: 'siteName',
-  //   widget: 'string',
-  //   required: true,
-  //   hint: 'The name of your website, e.g. "JohnSmith.com" or "John Smith\'s Blog"',
-  // },
+  {
+    label: 'Site Name',
+    name: 'siteName',
+    widget: 'string',
+    required: false,
+    hint: 'Used in browser tab titles and SEO meta tags, e.g. "Jennifer Neitzel" or "About Jennifer Neitzel". Defaults to Client Name if left blank.',
+  },
   {
     label: 'Location',
     name: 'location',
