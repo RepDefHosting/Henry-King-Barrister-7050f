@@ -2,10 +2,8 @@
 templateKey: index-page
 pageSlug: /
 pageTitle: Home
-metaDescription: Since joining the web-based restaurant review company in its
-  startup phase, Chandler Villacruz has spearheaded market research activities
-  that have allowed the firm to build effective advertising campaigns and
-  achieve sound business growth.
+metaDescription: Based in Sun Prairie, Wisconsin, Bill Huemmer guides clients
+  through the process of applying for home loans.
 published: true
 schemaType: WebPage
 featuredImage:
@@ -35,6 +33,4 @@ ctaButton:
   label: Send a Message
   link: mailto:hello@example.com
 ---
-Since joining the web-based restaurant review company in its startup phase, Chandler Villacruz has spearheaded market research activities that have allowed the firm to build effective advertising campaigns and achieve sound business growth.
-
-Chandler Villacruz also led the Food Rates marketing team in creating a successful user rewards program that boosted online signups by 10,000 accounts in its first 30 days. For his achievements in his field, the San Francisco Business Times recognized him as one of its “40 Under 40” business leaders in 2014.
+Based in Sun Prairie, Wisconsin, Bill Huemmer guides clients through the process of applying for home loans. As a mortgage loan originator, he communicates closely with builders, realtors, and clients. Bill Huemmer undertakes interviews and secures new leads, ensuring that the application process is seamless and efficient. He excels at answering the specific questions posed by lenders and supervisors about loan programs.
