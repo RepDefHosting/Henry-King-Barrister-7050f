@@ -1,33 +1,31 @@
 ---
 templateKey: profile-page
 pageSlug: /profile
-pageTitle: Profile
-metaDescription: "[Client Full Name] is a [Job Title] based in [Location]. Read
-  the full professional profile and career history of [Client Full Name]."
+pageTitle: Henry King - Barrister
+metaDescription: A law consultant and barrister, Henry King specialises in
+  insurance, personal injury, and employment law. Drawing on over seven years of
+  experience as a barrister, Henry King frequently advises and negotiates
+  settlements for high-value cases.
 published: true
 schemaType: ProfilePage
-header: "[Client Full Name]"
-subheader: null
+header: Henry King
 featuredImage:
-  src: /img/businessbuildings.jpg
+  src: /img/lawyerhero1.png
   alt: Hero Image
   caption: null
-connectWithMe: Connect with Me
-discoverConnectExplore: Find [Client Full Name] on the following platforms.
-longBiography_MD: |
-  {{long_biography}}
+connectWithMe: West Sussex
+subheader: null
 blogButton:
   label: Blog
   link: /blog
+discoverConnectExplore: UK
+longBiography_MD: |
+  {{long_biography}}
 ---
-# [Client Full Name]
+A law consultant and barrister, Henry King specialises in insurance, personal injury, and employment law. Drawing on over seven years of experience as a barrister, Henry King frequently advises and negotiates settlements for high-value cases.
 
-**[Client Full Name]** is a [Job Title] based in [Location]. Replace this section with the client's full biography. This content appears on the /profile/ page.
+Mr. King ranked in the Legal 500 2025 in Costs Litigation for his knowledge of costs law. He represents both the receiving and paying parties, as well as clients with claims against insurance companies. He has recently shifted his focus to commercial matters, representing major companies in high-value claims.
 
-## Career
+Before becoming a barrister, Mr. King worked as a legal assistant at a Health penalty defence charity in New Orleans and as a paralegal at a major law firm. He volunteered as an English teacher in Tianzhu, China, where he taught middle school students. He then volunteered with a cross-cultural team of Nepali and English volunteers to promote better sexual education and health practices in rural Nepal.
 
-[Describe the client's career history, current role, and key achievements here.]
-
-## Education
-
-[List the client's educational background here.]
+A graduate of the University of Leicester, Henry King earned an LLB law degree with a focus on French law and language.
