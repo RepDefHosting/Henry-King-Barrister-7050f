@@ -33,7 +33,7 @@ ctaButton:
   label: Send a Message
   link: mailto:hello@example.com
 ---
-A law consultant and barrister, Henry King specialises in insurance, personal injury, and employment law. Drawing on over seven years of experience as a barrister, Henry King frequently advises and negotiates settlements for high-value cases.
+A law consultant and barrister, [Henry King specialises in insurance, personal injury, and employment law.](https://henry-king-barrister.webflow.io/) Drawing on over seven years of experience as a barrister, Henry King frequently advises and negotiates settlements for high-value cases.
 
 Mr. King ranked in the Legal 500 2025 in Costs Litigation for his knowledge of costs law. He represents both the receiving and paying parties, as well as clients with claims against insurance companies. He has recently shifted his focus to commercial matters, representing major companies in high-value claims.
 
