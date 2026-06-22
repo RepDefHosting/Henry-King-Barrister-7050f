@@ -13,12 +13,12 @@ featuredImage:
   src: /img/lawyerhero1.png
   alt: Hero Image
   caption: null
-connectWithMe: West Sussex
+connectWithMe: Connect with Me
 subheader: null
 blogButton:
   label: Blog
   link: /blog
-discoverConnectExplore: UK
+discoverConnectExplore: Find Henry King on the following platforms.
 longBiography_MD: |
   {{long_biography}}
 ---
